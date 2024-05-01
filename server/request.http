@@ -2,7 +2,7 @@ POST http://localhost:3000/api/auth/register
 Content-Type: application/json
 
 {
-    "username": "house3173",
+    "username": "trinhvanhau",
     "password": "310703"
 }
 
@@ -13,6 +13,78 @@ POST http://localhost:3000/api/auth/login
 Content-Type: application/json
 
 {
-    "username": "house3173",
+    "username": "trinhvanhau",
     "password": "310703"
 }
+
+###
+
+
+POST http://localhost:3000/api/posts/create
+Content-Type: application/json
+
+{
+    "title":"Khoa hoc ve NodeJs",
+    "description": "Khoa hoc cung cap kien thuc nen tang ve NodeJs tu HouseEdu",
+    "url": "youtube.com/playlist?list=PL_-VfJajZj0VatBpaXkEHK_UPHL7dW6I3&si=opmmCYg0gpmfCK1y",
+    "status": "LEARNING"
+    
+}
+
+
+###
+
+
+POST http://localhost:3000/api/posts/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjMyODgxMzA0YTg4M2M2OTA5YjY1MTYiLCJpYXQiOjE3MTQ1ODc2ODF9.oHHev5WpwK-QO-S5DuTWOqc_UoCb-KPG-IWtjYABZKI
+
+{
+    "title":"Khoa hoc ve NodeJs",
+    "description": "Khoa hoc cung cap kien thuc nen tang ve NodeJs tu HouseEdu",
+    "url": "youtube.com/playlist?list=PL_-VfJajZj0VatBpaXkEHK_UPHL7dW6I3&si=opmmCYg0gpmfCK1y",
+    "status": "LEARNING"
+    
+}
+
+###
+
+
+POST http://localhost:3000/api/posts/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjMyODgxMzA0YTg4M2M2OTA5YjY1MTYiLCJpYXQiOjE3MTQ1ODc2ODF9.oHHev5WpwK-QO-S5DuTWOqc_UoCb-KPG-IWtjYABZKI
+
+{
+    "title":"Khoa hoc ve ReactJs",
+    "description": "Khoa hoc cung cap kien thuc nen tang ve ReactJs tu HouseEdu",
+    "url": "https://youtube.com/playlist?list=PL_-VfJajZj0UXjlKfBwFX73usByw3Ph9Q&si=-QBNTD-K4K_IVaCW",
+    "status": ""
+    
+}
+
+###
+
+GET http://localhost:3000/api/posts/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjMyODgxMzA0YTg4M2M2OTA5YjY1MTYiLCJpYXQiOjE3MTQ1ODc2ODF9.oHHev5WpwK-QO-S5DuTWOqc_UoCb-KPG-IWtjYABZKI
+
+
+###
+
+PUT http://localhost:3000/api/posts/66328b6b04a883c6909b651e
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjMyODgxMzA0YTg4M2M2OTA5YjY1MTYiLCJpYXQiOjE3MTQ1ODc2ODF9.oHHev5WpwK-QO-S5DuTWOqc_UoCb-KPG-IWtjYABZKI
+
+{
+    "title":"Khoa hoc ve ReactJs NEW",
+    "description": "Khoa hoc cung cap kien thuc nen tang ve ReactJs tu HouseEdu NEW",
+    "url": "youtube.com/playlist?list=PL_-VfJajZj0UXjlKfBwFX73usByw3Ph9Q&si=-QBNTD-K4K_IVaCW",
+    "status": ""
+}
+
+
+###
+
+DELETE  http://localhost:3000/api/posts/66328b6b04a883c6909b651e
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjMyODgxMzA0YTg4M2M2OTA5YjY1MTYiLCJpYXQiOjE3MTQ1ODc2ODF9.oHHev5WpwK-QO-S5DuTWOqc_UoCb-KPG-IWtjYABZKI
