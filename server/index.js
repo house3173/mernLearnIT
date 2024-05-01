@@ -1,5 +1,10 @@
+
+// Import library
 const express = require('express');
 const mongoose = require('mongoose');
+
+// Import from created file
+const authRouter = require('./routes/auth')
 
 const connectDB = async () => {
     try {
@@ -20,6 +25,8 @@ const connectDB = async () => {
 connectDB();
 
 const app = express();
+
+app.use('/api/auth', authRouter);
 
 app.get('/', (req,res) => res.send('Hello world!'));
 
