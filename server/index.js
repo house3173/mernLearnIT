@@ -2,6 +2,7 @@
 // Import library
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors')
 
 // Import from created file
 require('dotenv').config()
@@ -29,6 +30,7 @@ connectDB();
 
 const app = express();
 app.use(express.json())
+app.use(cors())
 
 app.use('/api/auth', authRouter);
 app.use('/api/posts', postRouter);
