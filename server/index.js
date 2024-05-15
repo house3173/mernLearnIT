@@ -12,7 +12,7 @@ const postRouter = require('./routes/post')
 
 const connectDB = async () => {
     try {
-        await mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@atlascluster.hpya52n.mongodb.net/`, {
+        await mongoose.connect(`mongodb+srv://house3173:310703@atlascluster.hpya52n.mongodb.net/`, {
             // useCreateIndex: true,
             // useNewUrlParser: true,
             // useUnifiedTopology: true,
@@ -33,6 +33,7 @@ app.use(express.json())
 
 const corsOptions ={
     origin:'http://localhost:3000', 
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,            //access-control-allow-credentials:true
     optionSuccessStatus: 200
 }
