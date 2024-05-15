@@ -1,3 +1,8 @@
+
+GET http://localhost:3000/
+
+###
+
 POST http://localhost:3000/api/auth/register
 Content-Type: application/json
 
@@ -40,7 +45,7 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjMyODgxMzA0YTg4M2M2OTA5YjY1MTYiLCJpYXQiOjE3MTQ1ODc2ODF9.oHHev5WpwK-QO-S5DuTWOqc_UoCb-KPG-IWtjYABZKI
 
 {
-    "title":"Khoa hoc ve NodeJs",
+    "title":"Khoa hoc ve NodeJs NEW 3",
     "description": "Khoa hoc cung cap kien thuc nen tang ve NodeJs tu HouseEdu",
     "url": "youtube.com/playlist?list=PL_-VfJajZj0VatBpaXkEHK_UPHL7dW6I3&si=opmmCYg0gpmfCK1y",
     "status": "LEARNING"
@@ -71,7 +76,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjMyO
 
 ###
 
-PUT http://localhost:3000/api/posts/66328b6b04a883c6909b651e
+PUT http://localhost:3000/api/posts/6632902dc389777c58e66506
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjMyODgxMzA0YTg4M2M2OTA5YjY1MTYiLCJpYXQiOjE3MTQ1ODc2ODF9.oHHev5WpwK-QO-S5DuTWOqc_UoCb-KPG-IWtjYABZKI
 
@@ -85,6 +90,6 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjMyO
 
 ###
 
-DELETE  http://localhost:3000/api/posts/66328b6b04a883c6909b651e
+DELETE  http://localhost:3000/api/posts/6639cd54026d094e845a497b
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjMyODgxMzA0YTg4M2M2OTA5YjY1MTYiLCJpYXQiOjE3MTQ1ODc2ODF9.oHHev5WpwK-QO-S5DuTWOqc_UoCb-KPG-IWtjYABZKI
