@@ -32,7 +32,7 @@ const app = express();
 app.use(express.json())
 
 const corsOptions ={
-    origin:'http://localhost:5000', 
+    origin:'http://localhost:3000', 
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,            //access-control-allow-credentials:true
     optionSuccessStatus: 200
